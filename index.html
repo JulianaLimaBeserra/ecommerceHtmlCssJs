@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Site Menu Hamburger Mobile</title>
+  </head>
+  <body>
+    <header id="header">
+      <a id="logo" href="">Logo</a>
+
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"> </span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Produtos</a></li>
+          <li><a href="">Portifólio</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slider">
+      <div class="myslider fade" style="display: block;">
+        <div class="text">
+          <h1>IMAGEM 1</h1>
+          <p>
+            Algum Título <br />
+            Mais algum detalhe aqui abaixo
+          </p>
+        </div>
+        <img id="img" src="./img/img1" alt="" srcset="" />
+      </div>
+      <div class="myslider fade">
+        <div class="text">
+          <h1>IMAGEM 2</h1>
+          <p>
+            Algum Título <br />
+            Mais algum detalhe aqui abaixo
+          </p>
+        </div>
+        <img id="img" src="./img/img2" alt="" srcset="" />
+      </div>
+      <div class="myslider fade">
+        <div class="text">
+          <h1>IMAGEM 3</h1>
+          <p>
+            Algum Título <br />
+            Mais algum detalhe aqui abaixo
+          </p>
+        </div>
+        <img id="img" src="./img/img3" alt="" srcset="" />
+      </div>
+      <div class="myslider fade">
+        <div class="text">
+          <h1>IMAGEM 4</h1>
+          <p>
+            Algum Título <br />
+            Mais algum detalhe aqui abaixo
+          </p>
+        </div>
+        <img id="img" src="./img/img4" alt="" srcset="" />
+      </div>
+      <div class="myslider fade">
+        <div class="text">
+          <h1>IMAGEM 5</h1>
+          <p>
+            Algum Título <br />
+            Mais algum detalhe aqui abaixo
+          </p>
+        </div>
+        <img id="img" src="./img/img5" alt="" srcset="" />
+      </div>
+    <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
+    <a class="next" onclick="plusSlides(1) ">&#10095;</a>
+
+    <div class="dotsbox">
+        
+        <span class="dot" onclick="currentSlider(1)"></span>
+        <span class="dot" onclick="currentSlider(2)"></span>
+        <span class="dot" onclick="currentSlider(3)"></span>
+        <span class="dot" onclick="currentSlider(4)"></span>
+        <span class="dot" onclick="currentSlider(5)"></span>
+
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
