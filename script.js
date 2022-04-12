@@ -46,6 +46,7 @@ function slidefun(n) {
   for (i = 0; i < mySlide.length; i++) {
     mySlide[i].style.display = "none";
   }
+  
   for (i = 0; i < dot.length; i++) {
     dot[i].classList.remove("active");
   }
