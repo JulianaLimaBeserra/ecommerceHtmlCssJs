@@ -1,136 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Site Menu Hamburger Mobile</title>
-  </head>
-  <body>
-    <header id="header">
-      <a id="logo" href="">Logo</a>
 
-      <nav id="nav">
-        <button
-          aria-label="Abrir Menu"
-          id="btn-mobile"
-          aria-haspopup="true"
-          aria-controls="menu"
-          aria-expanded="false"
-        >
-          Menu
-          <span id="hamburger"> </span>
-        </button>
-        <ul id="menu" role="menu">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Produtos</a></li>
-          <li><a href="">Portifólio</a></li>
-          <li><a href="">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9cf72f352e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Site Menu Hamburger Mobile</title>
+</head>
 
-    <div class="slider">
-      <div class="myslider fade" style="display: block">
-        <div class="text">
-          <h1>IMAGEM 1</h1>
-          <p>
-            Algum Título <br />
-            Mais algum detalhe aqui abaixo
-          </p>
-        </div>
-        <img id="img" src="./img/img1" alt="" srcset="" />
-      </div>
-      <div class="myslider fade">
-        <div class="text">
-          <h1>IMAGEM 2</h1>
-          <p>
-            Algum Título <br />
-            Mais algum detalhe aqui abaixo
-          </p>
-        </div>
-        <img id="img" src="./img/img2" alt="" srcset="" />
-      </div>
-      <div class="myslider fade">
-        <div class="text">
-          <h1>IMAGEM 3</h1>
-          <p>
-            Algum Título <br />
-            Mais algum detalhe aqui abaixo
-          </p>
-        </div>
-        <img id="img" src="./img/img3" alt="" srcset="" />
-      </div>
-      <div class="myslider fade">
-        <div class="text">
-          <h1>IMAGEM 4</h1>
-          <p>
-            Algum Título <br />
-            Mais algum detalhe aqui abaixo
-          </p>
-        </div>
-        <img id="img" src="./img/img4" alt="" srcset="" />
-      </div>
-      <div class="myslider fade">
-        <div class="text">
-          <h1>IMAGEM 5</h1>
-          <p>
-            Algum Título <br />
-            Mais algum detalhe aqui abaixo
-          </p>
-        </div>
-        <img id="img" src="./img/img5" alt="" srcset="" />
-      </div>
-      <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
-      <a class="next" onclick="plusSlides(1) ">&#10095;</a>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <a id="logo" href="">Logo</a>
 
-      <div class="dotsbox">
-        <span class="dot" onclick="currentSlider(1)"></span>
-        <span class="dot" onclick="currentSlider(2)"></span>
-        <span class="dot" onclick="currentSlider(3)"></span>
-        <span class="dot" onclick="currentSlider(4)"></span>
-        <span class="dot" onclick="currentSlider(5)"></span>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        Menu
+        <span id="hamburger"> </span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Produtos</a></li>
+        <li><a href="">Portifólio</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="myslider fade" style="display: block">
+      <div class="text">
+        <h1>IMAGEM 1</h1>
+        <p>
+          Algum Título <br />
+          Mais algum detalhe aqui abaixo
+        </p>
       </div>
+      <img id="img" src="./img/img1" alt="" srcset="" />
     </div>
+    <div class="myslider fade">
+      <div class="text">
+        <h1>IMAGEM 2</h1>
+        <p>
+          Algum Título <br />
+          Mais algum detalhe aqui abaixo
+        </p>
+      </div>
+      <img id="img" src="./img/img2" alt="" srcset="" />
+    </div>
+    <div class="myslider fade">
+      <div class="text">
+        <h1>IMAGEM 3</h1>
+        <p>
+          Algum Título <br />
+          Mais algum detalhe aqui abaixo
+        </p>
+      </div>
+      <img id="img" src="./img/img3" alt="" srcset="" />
+    </div>
+    <div class="myslider fade">
+      <div class="text">
+        <h1>IMAGEM 4</h1>
+        <p>
+          Algum Título <br />
+          Mais algum detalhe aqui abaixo
+        </p>
+      </div>
+      <img id="img" src="./img/img4" alt="" srcset="" />
+    </div>
+    <div class="myslider fade">
+      <div class="text">
+        <h1>IMAGEM 5</h1>
+        <p>
+          Algum Título <br />
+          Mais algum detalhe aqui abaixo
+        </p>
+      </div>
+      <img id="img" src="./img/img5" alt="" srcset="" />
+    </div>
+    <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
 
-    <h1>Layout Utilizando Flexbox</h1>
+    <a class="next" onclick="plusSlides(1) ">&#10095;</a>
 
-    <section class="container">
-      
-      <div class="imgContainer" id="item">
-        <img src="./img/img6" alt="" srcset="" />
-        
-      </div>
-      <div class="imgContainer" id="item">
-        <img src="./img/img7" alt="" srcset="" />
-        
-      </div>
-      <div class="imgContainer" id="item">
-        <img src="./img/img8" alt="" srcset="" />
-        
-      </div>
-    
-    </section>
+    <div class="dotsbox">
+      <span class="dot" onclick="currentSlider(1)"></span>
+      <span class="dot" onclick="currentSlider(2)"></span>
+      <span class="dot" onclick="currentSlider(3)"></span>
+      <span class="dot" onclick="currentSlider(4)"></span>
+      <span class="dot" onclick="currentSlider(5)"></span>
+    </div>
+  </div>
+  <!-- Images Marketing -->
+  <hr />
+  <h1 id="h1Flexbox">Layout Utilizando Flexbox</h1>
+  <hr />
+  <section class="container">
+    <div class="imgContainer" id="item">
+      <img src="./img/img6" alt="" srcset="" />
+    </div>
+    <div class="imgContainer" id="item">
+      <img src="./img/img7" alt="" srcset="" />
+    </div>
+    <div class="imgContainer" id="item">
+      <img src="./img/img8" alt="" srcset="" />
+    </div>
+  </section>
+  <section class="container2">
+    <div class="imgContainer2" id="item2">
+      <img src="./img/img9" alt="" srcset="" />
+    </div>
+    <div class="imgContainer2" id="item2">
+      <img src="./img/img10" alt="" srcset="" />
+    </div>
+    <div class="imgContainer2" id="item2">
+      <img src="./img/img11" alt="" srcset="" />
+    </div>
+  </section>
+  <hr />
+  <h1 id="h1ImgFloat1">Título separando Imagens Flutuantes Marketing</h1>
+  <hr />
+  <figure class="figure1">
+    <img src="./img/img12" alt="" srcset="" />
+    <figcaption> Legenda Imagem</figcaption>
+  </figure>
+  <p id="plegend">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est commodi
+    officia nulla labore, quae architecto optio omnis, ex fugiat
+    reprehenderit doloremque. Deleniti asperiores itaque provident
+    voluptatibus porro corrupti ipsam rerum!
+  </p>
+  <p id="plegend">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut saepe quam
+    iusto architecto beatae consequuntur, culpa ipsum voluptatum tempore
+    veniam aliquid exercitationem fugit? Tempora commodi vero iste a.
+    Nostrum, ullam!
+  </p>
+  <p id="plegend">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+    voluptatum quod libero officiis minima placeat numquam officia veniam
+    mollitia ducimus quaerat quasi molestias, odio nemo dignissimos nobis in
+    dolorem saepe?
+  </p>
+  </div>
+  <hr />
+  <h1 id="h1ImgFloat2">Título separando Imagens Flutuantes Marketing 2</h1>
+  <hr />
+  <figure class="figure2">
+    <img src="./img/img14" alt="" srcset="" />
+    <figcaption> Legenda Imagem</figcaption>
+  </figure>
 
-    <section class="container2">
-      
-      <div class="imgContainer2" id="item2">
-        <img src="./img/img9" alt="" srcset="" />
-        
-      </div>
-      <div class="imgContainer2" id="item2">
-        <img src="./img/img10" alt="" srcset="" />
-        
-      </div>
-      <div class="imgContainer2" id="item2">
-        <img src="./img/img11" alt="" srcset="" />
-        
-      </div>
-    
-    </section>
+  <p id="plegend2">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est commodi
+    officia nulla labore, quae architecto optio omnis, ex fugiat
+    reprehenderit doloremque. Deleniti asperiores itaque provident
+    voluptatibus porro corrupti ipsam rerum!
+  </p>
+  <p id="plegend2">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut saepe quam
+    iusto architecto beatae consequuntur, culpa ipsum voluptatum tempore
+    veniam aliquid exercitationem fugit? Tempora commodi vero iste a.
+    Nostrum, ullam!
+  </p>
+  <p id="plegend2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+    voluptatum quod libero officiis minima placeat numquam officia veniam
+    mollitia ducimus quaerat quasi molestias, odio nemo dignissimos nobis in
+    dolorem saepe?
+  </p>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="main-content">
+      <div class="left-box">
+        <h2>Sobre nós</h2>
+        <div class="content">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, nesciunt quae harum possimut</p>
+        </div>
+        <div class="social">
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
+          <a href="#"><span class="fab fa-youtube"></span></a>
+        </div>
+      </div><!-- left-box -->
+      <div class="center-box">
+        <h2>Endereço</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker"></span>
+            <span class="text.footer">Avenida dos Bancos, Mogi das Cruzes-SP</span>
+          </div>
 
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text.footer">+55 11 99999-9999</span>
+          </div>
 
-    <script src="./script.js"></script>
-  </body>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text.footer">exemplo@email.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="rigth-box">
+        <h2>Contato</h2>
+        <div class="content">
+          <form action="#">
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" required>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> <!-- main-content -->
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
