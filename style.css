@@ -180,12 +180,10 @@ h1{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 img {
   width: 100%;
   border-radius: 20px;
 }
-
 #item {
   max-width: 300px;
   min-width: 250px;
@@ -194,7 +192,6 @@ img {
   border-radius: 20px;
   display: flex;
 }
-
 .container2 {
   max-width: 1200px;
   margin: auto;
@@ -203,7 +200,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 #item2 {
   max-width: 300px;
   min-width: 250px;
@@ -217,7 +213,6 @@ img {
 /* -----Titles-----  */
 .containerh1{
   text-align: center;
-  
 }
 hr{
   width: 50%;
@@ -302,7 +297,7 @@ figcaption{
 .left-box .content .social{
   margin: 20px 0 0 0;
 }
-.left-box .content .social a{
+.left-box .content .social{
   padding: 0 2px;
 }
 .left-box .content .social a{
@@ -315,7 +310,7 @@ figcaption{
   font-size: 18px;
   transition: 0.3s;
 }
-#spanFoo {
+#spanFoo, #a.Foo{
   width: 40px;
   height: 40px;
   background: #000428;
@@ -324,10 +319,12 @@ figcaption{
   border-radius: 5px;
   font-size: 18px;
   transition: 0.3s;
+  padding:0 2px ;
 }
-.left-box .content .social a:hover{
-  background:#fff;
+#a.Foo:hover{
+  background: #fff;
 }
+
 #spanFoo:hover{
   background: #fff;
 }
@@ -363,9 +360,66 @@ figcaption{
 .center-box .content .msg{
   margin-top: 10px;
 }
+.right-box input, .right-box form textarea{
+  width: 100%;
+  font-size: 17px;
+  background: #000428;
+  padding-left: 10px;
+  border: 1px solid #2479b3;
+  color: #fff;
+  text-align: center;
+}
 
-    
+.right-box form input{
+  height: 35px;
+}
+.right-box form input:focus,
+.right-box form textarea:focus{
+  outline-color: #2479b3;
+}
+.right-box .textFoo{
+  font-size: 17px;
+  margin-bottom: 2px;
+  color: #2479b3;
+}
+.right-box .btn{
+  margin-top: 10px;
+}
+.right-box .btn button{
+  height: 40px;
+  width: 100%;
+  background: #2479b3;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  transition: 0.3s;
+}
+.right-box .btn button:hover{
+  color: #fff;
+  background: #0a1364;
+}
+.bottom .center{
+  padding: 5px;
+  font-size: 15px;
+  background: #000428;
+  text-align: center;
+}
+.bottom .center span{
+  color:#2c3e50;
+}
+.bottom .center {
+  color: #2479b3;
+  text-decoration: none;
+}
+#aFoo{
+  color: #2479b3;
+  text-decoration: none;
+}
+/* .bottom .center a:hover */
 
+/* ---------------------MEDIA QUERIES---------------------------- */
 @media screen and (max-width: 800px) {
   /* Navbar */
   #menu {
@@ -496,10 +550,46 @@ figcaption{
     margin: 10px;
     height: auto;
   }
+  /* ----Footer----- */
+  .footer{
+    position:-ms-page;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+    
+  }
+  .right-box input, .right-box form textarea{
+    width: 50%;
+    padding-left: 20px;
+  }
+  .right-box .btn button{
+    width: 50%;
+  }
+  .email .msg .btn{
+    padding: 10px;
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width:520px) {
   .text h1{
     font-size: 30px;
   }
+  .figure1{
+    flex-direction: column;
+    border-bottom: 10px;
+  }
+  .figure2{
+  flex-direction: column;
+  border-bottom: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+  
+
 }
