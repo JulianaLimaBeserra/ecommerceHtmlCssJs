@@ -1,4 +1,4 @@
-/* Body e Navbar */
+/* -----Body e Navbar----- */
 body{
   margin: 0px;
   padding: 0px;
@@ -53,7 +53,7 @@ a:hover {
   display: none;
 }
 
-/* Slider */
+/* -----Slider----- */
 
 .slider{
   position: relative;
@@ -165,7 +165,7 @@ a:hover {
   font-size: 20px;
 }
 
-/* Images */
+/* -----Images------ */
 h1{
   text-align: center;
   color:#000428;
@@ -214,7 +214,7 @@ img {
 }
 
 
-/* Titles  */
+/* -----Titles-----  */
 .containerh1{
   text-align: center;
   
@@ -226,7 +226,8 @@ hr{
   background: #2479b3;  
   clear: both;
 }
-/* Marketing e Imagens Flutuantes */
+
+/* -----Marketing e Imagens Flutuantes----- */
 .figure1{
   padding: 30px;
   width: 600px;
@@ -239,6 +240,7 @@ hr{
   padding-top: 10px;
   margin: 0 0 10px 10px;
   padding: 30px;
+  overflow: hidden;
 }
 figcaption{
   text-align: center;
@@ -269,6 +271,100 @@ figcaption{
   text-align: center;
   clear: both;
 }
+
+/* ------FOOTER----- */
+.footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #000428;
+  clear: both;
+  color: #fff;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+}
+.left-box .content .social{
+  margin: 20px 0 0 0;
+}
+.left-box .content .social a{
+  padding: 0 2px;
+}
+.left-box .content .social a{
+  width: 40px;
+  height: 40px;
+  background: #000428;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+#spanFoo {
+  width: 40px;
+  height: 40px;
+  background: #000428;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.left-box .content .social a:hover{
+  background:#fff;
+}
+#spanFoo:hover{
+  background: #fff;
+}
+.left-box .content{
+  text-align: justify;
+}
+#pFoo{
+  text-align: justify;
+}
+.center-box .content .fas{
+  font-size: 23px;
+  background:#000428;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  color: #2479b3;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center-box .content .fas:hover{
+  background: #fff;
+}
+.center-box .content .text.footer{
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center-box .content .phone{
+  margin: 10px 0;
+}
+.center-box .content .msg{
+  margin-top: 10px;
+}
+
+    
 
 @media screen and (max-width: 800px) {
   /* Navbar */

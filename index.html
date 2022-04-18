@@ -176,18 +176,18 @@
   </p>
   </div>
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="main-content">
       <div class="left-box">
         <h2>Sobre nós</h2>
         <div class="content">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, nesciunt quae harum possimut</p>
-        </div>
-        <div class="social">
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-          <a href="#"><span class="fab fa-youtube"></span></a>
+          <p id="pFoo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, nesciunt quae harum possimut</p>
+            <div class="social">
+            <a href="#"><span id="spanFoo" class="fab fa-facebook-f"></span></a>
+            <a href="#"><span id="spanFoo" class="fab fa-twitter"></span></a>
+            <a href="#"><span id="spanFoo" class="fab fa-instagram"></span></a>
+            <a href="#"><span id="spanFoo" class="fab fa-youtube"></span></a>
+          </div>
         </div>
       </div><!-- left-box -->
       <div class="center-box">
@@ -203,19 +203,26 @@
             <span class="text.footer">+55 11 99999-9999</span>
           </div>
 
-          <div class="email">
+          <div class="msg">
             <span class="fas fa-envelope"></span>
             <span class="text.footer">exemplo@email.com</span>
           </div>
         </div>
-      </div>
+      </div> <!-- center-box -->
       <div class="rigth-box">
         <h2>Contato</h2>
         <div class="content">
           <form action="#">
             <div class="email">
-              <div class="text">Email *</div>
+              <div class="textFoo">Email *</div>
               <input type="email" required>
+            </div>
+            <div class="msg">
+              <div class="textFoo">Mensagem * *</div>
+              <textarea name="" id="" cols="25" rows="2"></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Enviar</button>
             </div>
           </form>
         </div>
