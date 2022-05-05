@@ -1,6 +1,8 @@
 const btnMobile = document.getElementById("btn-mobile");
 const mySlide = document.querySelectorAll(".myslider");
 const dot = document.querySelectorAll(".dot");
+const currentYear = new Date();
+document.getElementById("year").innerHTML = currentYear.toLocaleString();
 
 function toggleMenu(event) {
   if (event.type === "touchstart") event.preventDefault();

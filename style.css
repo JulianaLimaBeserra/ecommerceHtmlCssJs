@@ -3,7 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+  background-image: #ffff;
   scroll-behavior: smooth;
 }
 
@@ -210,7 +210,7 @@ a:hover {
   font-size: 20px;
 }
 
-/* -----Images------ */
+/* -----Images Flexbox------ */
 h1 {
   text-align: center;
   color: #000428;
@@ -221,10 +221,13 @@ h1 {
 .container {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.imgFlex1{
+  border-radius: 50%;
 }
 
 img {
@@ -263,12 +266,10 @@ img {
 .containerh1 {
   text-align: center;
 }
-hr {
-  width: 50%;
-  height: 2px;
-  border: 0;
-  background: #2479b3;
-  clear: both;
+
+#h1Flexbox{
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 /* -----Marketing e Imagens Flutuantes----- */
@@ -294,12 +295,27 @@ figcaption {
 }
 
 #legend {
-  margin-top: 40px;
+padding-bottom: 5%;
+padding-top: 10%;
+margin-right: 5%;
+}
+
+#legend2{
+  padding-bottom: 5%;
+  padding-top: 10%;
+  margin-left: 5%;
+}
+
+#h1ImgFloat1{
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 #h1ImgFloat2 {
   text-align: center;
   clear: both;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 /* ------FOOTER----- */
@@ -382,6 +398,9 @@ figcaption {
   font-size: 1em;
   width: 80%;
 }
+.center-box{
+  margin-right:5%;
+}
 
 .center-box .content .fas {
   font-size: 23px;
@@ -399,6 +418,7 @@ figcaption {
 .center-box .content .fas:hover {
   background: #fff;
 }
+
 
 .center-box .content .text.footer {
   font-size: 0.9em;
@@ -419,7 +439,7 @@ figcaption {
   width: 70%;
   font-size: 1.1em;
   background: #000428;
-  padding-left: 10px;
+  padding-left: 10%;
   border: 1px solid #2479b3;
   color: #fff;
   text-align: center;
@@ -459,6 +479,7 @@ figcaption {
   background: #0a1364;
 }
 
+
 .bottom .center {
   padding: 5px;
   font-size: 15px;
@@ -468,6 +489,7 @@ figcaption {
 
 .bottom .center span {
   color: #2c3e50;
+  font-size: small;
 }
 
 .bottom .center {
@@ -478,6 +500,7 @@ figcaption {
 #aFoo {
   color: #2479b3;
   text-decoration: none;
+  font-size: small;
 }
 
 /* .bottom .center a:hover */
@@ -614,7 +637,7 @@ figcaption {
     margin: 0;
   }
 
-  /* Imagens */
+  /* Imagens Flexbox*/
   .figure1 {
     width: 300px;
     margin: 10px;
@@ -624,6 +647,19 @@ figcaption {
     width: 300px;
     margin: 10px;
   }
+
+  #legend {
+    margin-left: 5%;
+  }
+
+   #legend2{
+    margin-right: 5%;
+   }
+
+   #imgFloat2{
+    align-items: center;
+    margin-left: 2%;
+   }
 
   /* ----Footer----- */
   .footer {
@@ -669,5 +705,28 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+  /* --- Titles --- */
+  #h1Flexbox{
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  #h1ImgFloat1{
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  #h1ImgFloat2{
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  
+  #legend{
+    margin-right: 10%;
+  }
+
+  #legend2{
+    margin-left: 10%;
+  }
 }

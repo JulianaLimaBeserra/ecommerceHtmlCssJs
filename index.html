@@ -96,35 +96,35 @@
       <span class="dot" onclick="currentSlider(5)"></span>
     </div>
   </div>
-  <!-- Images Marketing -->
-  <hr />
+  <!-- Images Marketing Flexbox -->
+  
   <h1 id="h1Flexbox">Layout Utilizando Flexbox</h1>
-  <hr />
+  
   <section class="container">
     <div class="imgContainer" id="item">
-      <img src="./img/img6" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img6" alt="" srcset="" />
     </div>
     <div class="imgContainer" id="item">
-      <img src="./img/img7" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img7" alt="" srcset="" />
     </div>
     <div class="imgContainer" id="item">
-      <img src="./img/img8" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img8" alt="" srcset="" />
     </div>
   </section>
   <section class="container2">
     <div class="imgContainer2" id="item2">
-      <img src="./img/img9" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img9" alt="" srcset="" />
     </div>
     <div class="imgContainer2" id="item2">
-      <img src="./img/img10" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img10" alt="" srcset="" />
     </div>
     <div class="imgContainer2" id="item2">
-      <img src="./img/img11" alt="" srcset="" />
+      <img class="imgFlex1" src="./img/img11" alt="" srcset="" />
     </div>
   </section>
-  <hr />
+  
   <h1 id="h1ImgFloat1">Título separando Imagens Flutuantes Marketing</h1>
-  <hr />
+  
   <figure class="figure1">
     <img src="./img/img12" alt="" srcset="" />
     <figcaption> Legenda Imagem</figcaption>
@@ -134,19 +134,17 @@
     officia nulla labore, quae architecto optio omnis, ex fugiat
     reprehenderit doloremque. Deleniti asperiores itaque provident
     voluptatibus porro corrupti ipsam rerum!
-  </p>
-  <p id="legend">
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut saepe quam
     iusto architecto beatae consequuntur, culpa ipsum voluptatum tempore
     veniam aliquid exercitationem fugit? Tempora commodi vero iste a.
     Nostrum, ullam!
   </p>
   </div>
-  <hr />
+  
   <h1 id="h1ImgFloat2">Título separando Imagens Flutuantes Marketing 2</h1>
-  <hr />
+  
   <figure class="figure2">
-    <img src="./img/img14" alt="" srcset="" />
+    <img id="imgFloat2" src="./img/img14" alt="" srcset="" />
     <figcaption> Legenda Imagem</figcaption>
   </figure>
 
@@ -155,15 +153,15 @@
     officia nulla labore, quae architecto optio omnis, ex fugiat
     reprehenderit doloremque. Deleniti asperiores itaque provident
     voluptatibus porro corrupti ipsam rerum!
-  </p>
-  <p id="legend2">
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut saepe quam
     iusto architecto beatae consequuntur, culpa ipsum voluptatum tempore
     veniam aliquid exercitationem fugit? Tempora commodi vero iste a.
     Nostrum, ullam!
   </p>
   </div>
+
   <!-- Footer -->
+
   <footer class="footer">
     <div class="main-content">
       <div class="left-box">
@@ -180,8 +178,8 @@
         </div>
       </div>
       <!-- left-box -->
-      <div class="center-box">
-        <h2>Endereço</h2>
+      <div class="center-box"><!-- center-box -->
+        <h2 id="h2-center-box">Endereço</h2>
         <div class="content">
           <div class="place">
             <span class="fas fa-map-marker"></span>
@@ -199,8 +197,8 @@
           </div>
         </div>
       </div> <!-- center-box -->
-      <div class="right-box">
-        <h2>Contato</h2>
+      <div class="right-box"> <!-- right-box -->
+        <h2 id="h2-right-box">Contato</h2>
         <div class="content">
           <form action="#">
             <div class="email">
@@ -216,12 +214,12 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> <!-- right-box -->
     </div> <!-- main-content -->
     <div class="bottom">
       <div class="center">
         <span class="credit">Criado por <a href="#" id="aFoo">Juliana Lima e Roberto Sousa</a></span>
-        <span class="far fa-copyright"> Data / Todos os direitos reservados </span>
+        <span id="year" class="far fa-copyright"> </span>
       </div>
     </div>
   </footer>
