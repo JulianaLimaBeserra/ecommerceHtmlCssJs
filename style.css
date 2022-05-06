@@ -3,7 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
-  background-image: #ffff;
+  background-image: #000428;
   scroll-behavior: smooth;
 }
 
@@ -14,13 +14,14 @@ ul {
 }
 
 a {
-  color: #3498db;
+  color: #B8B8DB;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #98CBED;
+  color: #000428;
 }
 
 #logo {
@@ -50,7 +51,7 @@ a:hover {
 }
 
 #btn-mobile {
-  color: #3498db;
+  color: #B8B8DB;
   display: none;
 }
 
@@ -83,7 +84,7 @@ a:hover {
 
 .prev:hover,
 .next:hover {
-  color: #3498db;
+  color: #000428;
 }
 
 .next {
@@ -111,7 +112,7 @@ a:hover {
 
 .active,
 .dot:hover {
-  border-color: #3498db;
+  border-color: #000428;
 }
 
 #img {
@@ -200,7 +201,7 @@ a:hover {
 }
 
 .text h1 {
-  color: #3498db;
+  color: #ffff;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -228,6 +229,31 @@ h1 {
 }
 .imgFlex1{
   border-radius: 50%;
+  transition: 1.2s;
+  cursor:pointer;
+}
+
+.imgContainer .container {
+  overflow:hidden;
+}
+
+.imgContainer .imgContainer2 .imgFlex1{
+   max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.imgContainer:hover  .imgFlex1{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.imgContainer2:hover  .imgFlex1{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 img {
@@ -298,12 +324,14 @@ figcaption {
 padding-bottom: 5%;
 padding-top: 10%;
 margin-right: 5%;
+text-align: justify;
 }
 
 #legend2{
   padding-bottom: 5%;
   padding-top: 10%;
   margin-left: 5%;
+  text-align: justify;
 }
 
 #h1ImgFloat1{
@@ -387,11 +415,16 @@ margin-right: 5%;
 }
 
 #spanFoo:hover {
-  background: #fff;
+  background: #98CBED;
+  color: #000428;
 }
 
 .left-box .content {
   text-align: justify;
+}
+
+#h2-left-box{
+  text-align:left;
 }
 
 #pFoo {
@@ -410,13 +443,14 @@ margin-right: 5%;
   line-height: 45px;
   text-align: center;
   border-radius: 50%;
-  color: #2479b3;
+  color: #CBCBE9;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .center-box .content .fas:hover {
-  background: #fff;
+  background: #98CBED;
+  color: #000428;
 }
 
 
@@ -440,20 +474,20 @@ margin-right: 5%;
   font-size: 1.1em;
   background: #000428;
   padding-left: 10%;
-  border: 1px solid #2479b3;
+  border: 1px solid #CBCBE9;
   color: #fff;
   text-align: center;
 }
 
 .right-box form input:focus,
 .right-box form textarea:focus {
-  outline-color: #2479b3;
+  outline-color: #CBCBE9;
 }
 
 .right-box .textFoo {
   font-size: 17px;
   margin-bottom: 2px;
-  color: #2479b3;
+  color: #CBCBE9;
 }
 
 .right-box .btn {
@@ -465,18 +499,19 @@ margin-right: 5%;
   border-radius: 10px;
   height: 40px;
   width: 80%;
-  background: #2479b3;
+  background: #CBCBE9;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  color: #fff;
+  color:#000428;
   transition: 0.3s;
 }
 
 .right-box .btn button:hover {
-  color: #fff;
-  background: #0a1364;
+  background: #98CBED;
+  color: #000428;
+  font-weight: bold;
 }
 
 
@@ -493,14 +528,19 @@ margin-right: 5%;
 }
 
 .bottom .center {
-  color: #2479b3;
   text-decoration: none;
 }
 
 #aFoo {
-  color: #2479b3;
+  color: #CBCBE9;
   text-decoration: none;
   font-size: small;
+}
+
+#aFoo:hover{
+  background-color: #B8B8DB;
+  color: #000428;
+  font-weight: bold;
 }
 
 /* .bottom .center a:hover */
@@ -527,11 +567,11 @@ margin-right: 5%;
     visibility: visible;
     overflow-y: auto;
   }
-
+  
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #2c3e50;
   }
 
   #btn-mobile {
@@ -546,7 +586,7 @@ margin-right: 5%;
   }
 
   #hamburger {
-    color: #3498db;
+    color:#B8B8DB;
     width: 20px;
     border-top: 2px solid;
   }
@@ -657,7 +697,7 @@ margin-right: 5%;
    }
 
    #imgFloat2{
-    align-items: center;
+    text-align: center;
     margin-left: 2%;
    }
 
@@ -689,7 +729,13 @@ margin-right: 5%;
     padding: 10px;
     padding-left: 20px;
   }
+  #h2-center-box{
+    text-align: center;  
 }
+
+  #h2-left-box{
+    text-align: center;
+  }
 
 @media screen and (max-width: 520px) {
   .text h1 {
@@ -729,4 +775,5 @@ margin-right: 5%;
   #legend2{
     margin-left: 10%;
   }
+}
 }
